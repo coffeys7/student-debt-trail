@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Information():
 	grades = 4.0
 	mental_health = 100
@@ -16,6 +17,27 @@ class Information():
 
 	def downCash(decrement) :
 		moneys = moneys - decrement
+=======
+class Stats():  
+	def __init__(self, name):
+        self.name = name
+        self.grades = 4.0
+        self.mental_health = 100
+        self.health = 100 
+        self.money = 5,000
+		
+	def downGrade(amount,self) :
+		self.grades += amount
+		#calculate actual GPA and stuff here
+	
+	def downHealth(amount_h,amount_mh,self) :
+		self.health += amount_h
+        self.mental_health += amount_mh
+	
+	def downCash(amount,self) :
+		self.money  += amount 
+
+>>>>>>> 1516ae7a76c5c37179ec08e887aa03ef29d83ab6
 
 class Loan():
     def __init__(self, principal, i_rate):
