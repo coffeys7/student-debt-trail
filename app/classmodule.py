@@ -22,12 +22,15 @@ class Loan():
 
 # simple class wrapper for array of string selection options
 class Options():
-    def __init__(self, options):
+    def __init__(self, options, prompt='Select an option:'):
         self.options = options
+        self.prompt = prompt
 
     def print(self):
         for i in range(len(self.options)):
             print('[' + str(i+1) + ']: ' + self.options[i])
 
-    def select(self, index):
-        return self.options[index + 1]
+    def select(self):
+        self.print()
+        index = input(self.prompt + ' ')
+        return self.options[int(index) - 1]
