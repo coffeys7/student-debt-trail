@@ -1,43 +1,32 @@
-<<<<<<< HEAD
+import random
+
 class Information():
-	grades = 4.0
-	mental_health = 100
-	health = 100
-	moneys = 5,000
+    total_loans = []
+    schools_list = [("Albion",27000), ("Andrews",17160), ("Kettering", 19385), ("Rochester", 10320)]
+    
+    def add_loan(self, in_loan):
+        total_loans.append(in_loan)
+        return;
 
-	def __init__(self, name):
+    def __init__(self, name):
         self.name = name
-
-	def downGrade(decrement) :
-		grades = 4.0 - decrement
-		#calculate actual GPA and stuff here
-
-	def downHealth(decrement_h,decrement_mh) :
-		health = health - decrement_h
-
-	def downCash(decrement) :
-		moneys = moneys - decrement
-=======
-class Stats():  
-	def __init__(self, name):
-        self.name = name
+        self.school = random.choice(self.schools_list)
         self.grades = 4.0
         self.mental_health = 100
         self.health = 100 
         self.money = 5,000
 		
-	def downGrade(amount,self) :
-		self.grades += amount
-		#calculate actual GPA and stuff here
+	    
+    def downGrade(self,amount) :
+        self.grades += amount
+        #FIXME: calculate actual GPA and stuff here
 	
-	def downHealth(amount_h,amount_mh,self) :
-		self.health += amount_h
+    def downHealth(self,amount_h,amount_mh) :
+        self.health += amount_h
         self.mental_health += amount_mh
-	
-	def downCash(amount,self) :
-		self.money  += amount 
-
->>>>>>> 1516ae7a76c5c37179ec08e887aa03ef29d83ab6
+    
+    def changeCash(self,amount) :
+        self.money += amount
 
 class Loan():
     def __init__(self, principal, i_rate):
@@ -75,3 +64,5 @@ class Options():
         self.print()
         index = input(self.prompt + ' ')
         return self.options[int(index) - 1]
+
+
