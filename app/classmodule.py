@@ -21,9 +21,9 @@ class Information():
             self.grades = self.grades * amount
             
     def changeHealth(self,amount_h,amount_mh):
-        if self.health is not 100 and self.health is not 0 :
+        if (self.health + amount_h) < 100 or (self.health + amount_h) > 0 :
             self.health += amount_h
-        if self.mental_health is not 100 and self.mental_health is not 0 :
+        if (self.mental_health + amount_mh) < 100 or (self.mental_health + amount_mh) > 0 :
             self.mental_health += amount_mh
     
     def changeCash(self,amount) :
