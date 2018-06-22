@@ -16,12 +16,15 @@ class Information():
         self.health = 100 
         self.money = 5000
 		
-    def changeGrade(self,amount) :
-        self.grades = self.grades * amount		
-	    
-   def changeHealth(self,amount_h,amount_mh) :
-        self.health += amount_h
-        self.mental_health += amount_mh
+    def changeGrade(self,amount):
+        if not self.grades >= 4.0 :
+            self.grades = self.grades * amount
+            
+    def changeHealth(self,amount_h,amount_mh):
+        if self.health is not 100 and self.health is not 0 :
+            self.health += amount_h
+        if self.mental_health is not 100 and self.mental_health is not 0 :
+            self.mental_health += amount_mh
     
     def changeCash(self,amount) :
         self.money += amount
