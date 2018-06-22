@@ -1,5 +1,5 @@
 import sys
-from .classmodule import MyClass
+from .classmodule import Loan
 from .funcmodule import my_function
 
 def main():
