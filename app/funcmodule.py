@@ -17,6 +17,7 @@ def random_events(person_info):
     {"event": "HOLY SHIT YOU HAVE BEEN AN AMAZING STUDENT. You've been involved\
     in extracurriculars and scored yourself an internship at Amazon! Go you.", "$amount" : 3000 , 
     "health" : 10, "mental_health" : 15, "grades" : 1.5}]
+    
     event = random.choice(scenarios)
     person_info.changeCash(event["$amount"])
     person_info.changeHealth(event["health"],event["mental_health"])  

@@ -27,6 +27,14 @@ def actPrintout(actIn):
         print("\tYou spent a lot more time having fun in high school, so your work ethics and grades suffered. As a result your ACT was " + str(actIn))
         return False
 
+def determine_Debt(actIn):
+    if act_score > 30:
+        #scholarship
+        print("\t Because of your good grades and score, your private school gave you enough scholarships to cut down on your loans. This means you only need to pay  $2,500 for tuition at the
+        end of the month")
+    else:
+        #super_debt
+
 def beginning_text(actIn):
 
     print_out_beginning()
