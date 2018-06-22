@@ -1,4 +1,5 @@
 import random
+
 class Information():
     total_loans = []
     schools_list = [("Albion",27000), ("Andrews",17160), ("Kettering", 19385), ("Rochester", 10320)]
@@ -9,16 +10,16 @@ class Information():
 
     def __init__(self, name):
         self.name = name
-        self.school = random.choice(schools_list)
+        self.school = random.choice(self.schools_list)
         self.grades = 4.0
         self.mental_health = 100
         self.health = 100 
         self.money = 5000
 		
     def changeGrade(self,amount) :
-        self.grades = self.grades * amount
-	
-    def changeHealth(self,amount_h,amount_mh) :
+        self.grades = self.grades * amount		
+	    
+   def changeHealth(self,amount_h,amount_mh) :
         self.health += amount_h
         self.mental_health += amount_mh
     
@@ -54,7 +55,10 @@ class Options():
 
     def print(self):
         for i in range(len(self.options)):
-            print('[' + str(i+1) + ']: ' + self.options[i])
+            print('[' + str(i+1) + ']: ' + str(self.options[i]))
 
-    def select(self, index):
-        return self.options[index + 1]
+    def select(self):
+        self.print()
+        index = input(self.prompt + ' ')
+        return self.options[int(index) - 1]
+

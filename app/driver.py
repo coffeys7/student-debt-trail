@@ -30,13 +30,12 @@ def actPrintout(actIn):
 def determine_Debt(actIn):
     if act_score > 30:
         #scholarship
-        print("\t Because of your good grades and score, your private school gave you enough scholarships to cut down on your loans. This means you only need to pay  $2,500 for tuition at the
-        end of the month")
+        print("\t Because of your good grades and score, your private school gave you enough scholarships to cut down on your loans.")
     else:
         #super_debt
+        print("bleh")
 
 def beginning_text(actIn):
-
     print_out_beginning()
     name = input("\tWhat's your name? ")
     print("\tWelcome to college " + str(name))

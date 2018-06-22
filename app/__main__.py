@@ -3,10 +3,11 @@ from classmodule import Loan
 from classmodule import Options
 from classmodule import Information
 from funcmodule import random_events
+from funcmodule import my_function
 import os
 import random
 from time import sleep
-from driver import beginning_text 
+from driver import beginning_text, actGen 
 
 
 def main():
@@ -17,20 +18,8 @@ def main():
     #act_score = actGen()
     act_score = 23
     person = beginning_text(act_score)
-    if act_score > 30:
-        #scholarship
-        print("Oh no")
-    else:
-        #super_debt
-        print("Oh yis")
-
     person_info = Information(person)   
     random_events(person_info)
-
-    # Options exampls
-    # ls = ['One', 'Two', 'Three']
-    # options = Options(ls, 'Which number do you want?')
-    # opt = options.select()
 
 if __name__ == '__main__':
     main()
