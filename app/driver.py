@@ -6,6 +6,7 @@ from time import sleep
 def actGen():
     return 21 + random.randint(-15,15)
 
+
 def print_out_beginning():
     print("\t*********************************")
     print("\t************Hello There**********")
@@ -26,10 +27,21 @@ def actPrintout(actIn):
         print("\tYou spent a lot more time having fun in high school, so your work ethics and grades suffered. As a result your ACT was " + str(actIn))
         return False
 
-print_out_beginning()
-name = input("\tWhat's your name? ")
-print("Welcome to college " + str(name))
-actScore = actGen()
-got_scholarships = actPrintout(actScore)
+def determine_Debt(actIn):
+    if act_score > 30:
+        #scholarship
+        print("\t Because of your good grades and score, your private school gave you enough scholarships to cut down on your loans. This means you only need to pay  $2,500 for tuition at the
+        end of the month")
+    else:
+        #super_debt
+
+def beginning_text(actIn):
+
+    print_out_beginning()
+    name = input("\tWhat's your name? ")
+    print("\tWelcome to college " + str(name))
+    actScore = actIn
+    got_scholarships = actPrintout(actScore)
+    return name
 
 
