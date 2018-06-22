@@ -4,13 +4,13 @@ class Information():
         self.grades = 4.0
         self.mental_health = 100
         self.health = 100 
-        self.money = 5,000
+        self.money = 5000
 		
-    def downGrade(self,amount) :
-        self.grades += amount
+    def changeGrade(self,amount) :
+        self.grades = self.grades * amount
         #FIXME: calculate actual GPA and stuff here
 	
-    def downHealth(self,amount_h,amount_mh) :
+    def changeHealth(self,amount_h,amount_mh) :
         self.health += amount_h
         self.mental_health += amount_mh
     
