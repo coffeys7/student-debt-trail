@@ -10,6 +10,15 @@ from time import sleep
 from driver import beginning_text, actGen 
 
 
+def start_semester(person_in):
+    count = 10
+    while count > 0:
+        print("\t Week: " + str(10 - count))
+        print("\t ......")
+        sleep(3)
+        random_events(person_in)
+        count = count - 1
+
 def main():
     args = sys.argv[1:]
     print('arg count :: {}'.format(len(args)))
@@ -19,7 +28,7 @@ def main():
     act_score = 23
     person = beginning_text(act_score)
     person_info = Information(person)   
-    random_events(person_info)
+    start_semester(person_info)
 
 if __name__ == '__main__':
     main()
