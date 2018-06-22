@@ -1,21 +1,21 @@
 class Information():  
-	def __init__(self, name):
+    def __init__(self, name):
         self.name = name
-		self.grades = 4.0
-		self.mental_health = 100
-		self.health = 100 
-		self.money = 5,000
+        self.grades = 4.0
+        self.mental_health = 100
+        self.health = 100 
+        self.money = 5,000
 		
-	def downGrade(self,amount) :
-		self.grades += amount
-		#FIXME: calculate actual GPA and stuff here
+    def downGrade(self,amount) :
+        self.grades += amount
+        #FIXME: calculate actual GPA and stuff here
 	
-	def downHealth(self,amount_h,amount_mh) :
-		self.health += amount_h
-		self.mental_health += amount_mh
-	
-	def changeCash(self,amount) :
-		self.money += amount
+    def downHealth(self,amount_h,amount_mh) :
+        self.health += amount_h
+        self.mental_health += amount_mh
+    
+    def changeCash(self,amount) :
+        self.money += amount
 
 class Loan():
     def __init__(self, principal, i_rate):
