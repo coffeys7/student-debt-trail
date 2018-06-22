@@ -5,17 +5,17 @@ class Loan():
         self.year = 0
         self.payments = 0.0
 
-    def set_year(year):
+    def set_year(self, year):
         self.year = year
 
-    def advance_year():
+    def advance_year(self):
         self.year += 1
 
-    def total():
+    def total(self):
         return self.principal + self.interest() - self.payments
 
-    def interest():
+    def interest(self):
         return self.principal * (1 + (self.i_rate * self.year))
 
-    def make_payment(payment_amt):
+    def make_payment(self, payment_amt):
         self.payments += payment_amt

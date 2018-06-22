@@ -1,0 +1,9 @@
+app/__init__.py
+app/__main__.py
+app/classmodule.py
+app/funcmodule.py
+student_debt_trail.egg-info/PKG-INFO
+student_debt_trail.egg-info/SOURCES.txt
+student_debt_trail.egg-info/dependency_links.txt
+student_debt_trail.egg-info/entry_points.txt
+student_debt_trail.egg-info/top_level.txt
