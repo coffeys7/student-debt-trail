@@ -17,7 +17,7 @@ class Information():
         self.money = 5000
 		
     def changeGrade(self,amount):
-        if not self.grades >= 4.0 :
+        if (self.grades * amount) <= 4.0 :
             self.grades = self.grades * amount
             
     def changeHealth(self,amount_h,amount_mh):

@@ -15,7 +15,7 @@ def start_semester(person_in):
     while count > 0:
         print("\t Week: " + str(10 - count))
         print("\t ......")
-        sleep(3)
+        sleep(1)
         random_events(person_in)
         count = count - 1
 
@@ -25,7 +25,7 @@ def main():
     for arg in args:
         print('passed argument :: {}'.format(arg))
     #act_score = actGen()
-    act_score = 23
+    act_score = actGen()
     person = beginning_text(act_score)
     person_info = Information(person)   
     start_semester(person_info)
