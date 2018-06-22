@@ -1,11 +1,11 @@
 from setuptools import setup
 
 setup(
-    name = 'student_debt_trail',
+    name = 'student-debt-trail',
     version = '0.1.0',
-    packages = ['student_debt_trail'],
+    packages = ['app'],
     entry_points = {
         'console_scripts': [
-            'student_debt_trail = student_debt_trail.__main__:main'
+            'app = app.__main__:main'
         ]
     })
