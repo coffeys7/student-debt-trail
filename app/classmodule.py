@@ -1,11 +1,21 @@
-class Information():  
+import random
+class Information():
+    total_loans = []
+    schools_list = [("Albion",27000), ("Andrews",17160), ("Kettering", 19385), ("Rochester", 10320)]
+    
+    def add_loan(self, in_loan):
+        total_loans.append(in_loan)
+        return;
+
     def __init__(self, name):
         self.name = name
+        self.school = random.choice(schools_list)
         self.grades = 4.0
         self.mental_health = 100
         self.health = 100 
         self.money = 5,000
-		
+
+    
     def downGrade(self,amount) :
         self.grades += amount
         #FIXME: calculate actual GPA and stuff here
