@@ -1,22 +1,23 @@
-class Information():  
-	grades = 4.0
-	mental_health = 100
-	health = 100 
-	moneys = 5,000
-	
+class Stats():  
 	def __init__(self, name):
         self.name = name
+        self.grades = 4.0
+        self.mental_health = 100
+        self.health = 100 
+        self.money = 5,000
 		
-	def downGrade(decrement) :
-		grades = 4.0 - decrement
+	def downGrade(amount,self) :
+		self.grades += amount
 		#calculate actual GPA and stuff here
 	
-	def downHealth(decrement_h,decrement_mh) :
-		health = health - decrement_h
+	def downHealth(amount_h,amount_mh,self) :
+		self.health += amount_h
+        self.mental_health += amount_mh
 	
-	def downCash(decrement) :
-		moneys = moneys - decrement
-        
+	def downCash(amount,self) :
+		self.money  += amount 
+
+
 class Loan():
     def __init__(self, principal, i_rate):
         self.principal = principal
